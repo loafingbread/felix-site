@@ -1,3 +1,78 @@
+:root {
+  --font-size: 16px;
+  --font-family: Roboto, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --text-color: #111;
+  --bg-color: #fff;
+  --border-color: #ccc;
+  --max-width: 960px;
+  --padding: 10rem;
+  --margin: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+p {
+  margin: 0 0 var(--margin) 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border: 1px solid var(--border-color);
+  background: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: var(--margin);
+  width: 100%;
+  max-width: 100%;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 0 0 var(--margin) 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
